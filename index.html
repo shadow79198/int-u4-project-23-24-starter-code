@@ -13,12 +13,15 @@
         <div class="questions">
             <div class="question-display-one">
                 <h4>When playing a video game, Do you wait for the enemy to make a mistake or do you apply pressure to the enemy</h4>
-                <label for="first-answer">Options are: Wait for a mistake or Apply pressure</label>
+                <label for="first-answer">Options: Wait for a mistake or Apply pressure</label>
                 <br>
                 <input type="text" class="first-answer" required>
                 <br>
+                <button id="sumbittion">Submit</button>
+                <br>
                 <div class="move">
-                    <button>Next Question</button>
+                    <p class="deny"></p>
+                    <button id="second-screen">Next Question</button>
                 </div>
 
             <!-- <img src="https://img.buzzfeed.com/buzzfeed-static/static/2021-06/24/16/asset/815a5287257c/anigif_sub-buzz-4360-1624553394-78_preview.gif?output-quality=auto&output-format=auto&downsize=360:*"> -->
@@ -26,12 +29,12 @@
             <div class="question-display-two">
                 <h4>Do you like to end games quickly or extend the game time</h4>
                 <div class="button-div">
-                    <button class="quick">AAA</button>
-                    <button class="extend">AAA</button>
+                    <button class="quick">End game quickly</button>
+                    <button class="extend">Extend the game</button>
                 </div>
                 <br>
                 <div class="move">
-                    <button>Next Question</button>
+                    <button id="third-screen">Next Question</button>
                 </div>
                 <!-- <img src="https://img.buzzfeed.com/buzzfeed-static/static/2018-11/19/17/asset/buzzfeed-prod-web-05/anigif_sub-buzz-18467-1542667455-1.gif"> -->
             </div>
@@ -43,13 +46,13 @@
                 </div>
                 <br>
                 <div class="move">
-                    <button>End Test</button>
+                    <button id="fourth-screen">End Test</button>
                 </div>
             </div>
         </div>
         <div class="result">
-            <h1>Test</h1>
-            <p>reason</p>
+            <h1 id="option-selected">Test</h1>
+            <p id="reason">reason</p>
         </div>
     </body>
 </html>

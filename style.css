@@ -54,3 +54,9 @@ button{
     display: flex;
     justify-content: flex-end;
 }
+.question-display-two, .question-display-three, .result{
+    display: none;
+}
+#second-screen, #third-screen, #fourth-screen{
+    display: none;
+}
