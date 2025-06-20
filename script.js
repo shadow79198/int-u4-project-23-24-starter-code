@@ -6,6 +6,12 @@ let heavy = 0
 let winCondition = 0
 let answerFirst = document.querySelector(".first-answer")
 
+//text used at the end screen
+selectedOption = document.querySelector("#option-selected")
+reason = document.querySelector("#reason")
+factor = 0
+const results = ["rushDown", "setUp", "heavy", "winCondition"]
+place = 0
 
 //move between the screens
 //buttons to move
@@ -101,4 +107,12 @@ moveLast.addEventListener("click", function() {
     console.log(setUp)
     console.log(heavy)
     console.log(winCondition)
+    const score = [rushDown, setUp, heavy, winCondition]
+    for (let y=0; y<score.length; y++){
+        if (score[place] < score[y]){
+            place = y
+            console.log(y)
+        }
+        console.log(place)
+    }
 })
