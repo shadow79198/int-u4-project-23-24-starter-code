@@ -15,6 +15,7 @@ place = 0
 oneImg = document.querySelector(".imgOne")
 twoImg = document.querySelector(".imgTwo")
 questions = document.querySelector(".questions")
+information = document.querySelector(".information")
 
 //move between the screens
 //buttons to move
@@ -107,6 +108,7 @@ moveLast.addEventListener("click", function() {
     displayThreeQuestion.style.display = "none"
     displayResult.style.display = "block"
     questions.style.display = "none"
+    information.style.display = "none"
     console.log(rushDown)
     console.log(setUp)
     console.log(heavy)
@@ -124,7 +126,7 @@ moveLast.addEventListener("click", function() {
     if (results[0] === results [place]){
         //rushdown
         selectedOption.innerHTML = "You should play a rushdown character"
-        reason.innerHTML = "rush down character focuses on pressuring the enemy with their combo potentials so that they are able to win the game in a fast pace playstyle. This gameplay style requieres people to spend some time practicing the character. Some characters like: Kazuya, Zero Suit Samus, Pikachu, etc."
+        reason.innerHTML = "Rush down characters focuses on pressuring the enemy with their combo potentials so that they are able to win the game in a fast pace playstyle. This gameplay style requieres people to spend some time practicing the character. Some characters like: Kazuya, Zero Suit Samus, Pikachu, etc."
         oneImg.src = "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHJ4dzVtdXU3bzlyZ2E3cjc2YWtwbXAweWcxZ3YwOG14cGZsdDE0NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/T9JZXEqRPLMadn21ZF/giphy.gif"
         twoImg.src = "https://ssb.wiki.gallery/images/d/d7/Kirby_Up_B_SSBU.gif"    
     } else if (results[1] === results[place]){
