@@ -114,5 +114,22 @@ moveLast.addEventListener("click", function() {
             console.log(y)
         }
         console.log(place)
+    if (results[0] === results [y]){
+        //rushdown
+        selectedOption.innerHTML = "You should play a rushdown character"
+        reason.innerHTML = "rush down character focuses on pressuring the enemy with their combo potentials so that they are able to win the game in a fast pace playstyle. This gameplay style requieres people to spend some time practicing the character. Some characters like: Kazuya, Zero Suit Samus, Pikachu, etc."    
+    } else if (results[1] === results[y]){
+        //setUp
+        selectedOption.innerHTML = "You should play a set up character"
+        reason.innerHTML = "Set up characters focuses on keeping the stage under their control, with them putting traps on the field for the opponent to fall on it. Characters: like Snake, Simon/Richter, Link, etc. Fit this game style"
+    } else if (results[2] === results[y]){
+        //heavy
+        selectedOption.innerHTML = "You should play a heavy character"
+        reason.innerHTML = "Heavy characters focuses on their raw damage potential without relying on learning the combos needed to dominate the game. Characters like: Ganondork, King DeDeDe, Ridley, etc. Are all examples of heavy characters"
+    } else{
+        //winCondition
+        selectedOption.innerHTML = "You should play a win condition character"
+        reason.innerHTML = "Win condition characters rely on their strategy to prolong the game as much as they need to have their win condition activated. Characters like: Wario, Joker, Little Mac, etc. Take notice that these characters are good without the condition activated but once it is activated their kill potential increases by a lot."
+    }
     }
 })
